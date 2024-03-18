@@ -1,0 +1,8 @@
+E:\ToolBox\ExcelDataExporter\IPC_Test\bin\Debug\IPC_Test.exe.config
+E:\ToolBox\ExcelDataExporter\IPC_Test\bin\Debug\IPC_Test.exe
+E:\ToolBox\ExcelDataExporter\IPC_Test\bin\Debug\IPC_Test.pdb
+E:\ToolBox\ExcelDataExporter\IPC_Test\obj\Debug\IPC_Test.csproj.AssemblyReference.cache
+E:\ToolBox\ExcelDataExporter\IPC_Test\obj\Debug\IPC_Test.csproj.SuggestedBindingRedirects.cache
+E:\ToolBox\ExcelDataExporter\IPC_Test\obj\Debug\IPC_Test.csproj.CoreCompileInputs.cache
+E:\ToolBox\ExcelDataExporter\IPC_Test\obj\Debug\IPC_Test.exe
+E:\ToolBox\ExcelDataExporter\IPC_Test\obj\Debug\IPC_Test.pdb

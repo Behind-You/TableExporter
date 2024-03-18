@@ -1,0 +1,23 @@
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Settings\Settings.xlsx
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Properties\Settings.settings
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Properties\Resources.resx
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Properties\Resources.Designer.cs
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Properties\Settings.Designer.cs
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Export Table Data.dll.config
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Export Table Data.dll
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Export Table Data.pdb
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Export Table Data.dll.manifest
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Export Table Data.vsto
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Microsoft.WindowsAPICodePack.dll
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Microsoft.WindowsAPICodePack.xml
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\bin\Release\Microsoft.WindowsAPICodePack.Shell.xml
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.csproj.AssemblyReference.cache
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.MyRibbon.resources
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.Properties.Resources.resources
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.csproj.GenerateResource.cache
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.csproj.CoreCompileInputs.cache
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\FuniglooExportData.csproj.CopyComplete
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\Export Table Data.dll
+E:\ToolBox\ExcelDataExporter\FuniglooExportData\obj\Release\Export Table Data.pdb

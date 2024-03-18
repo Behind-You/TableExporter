@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Export Table Data", "Export Table Data.csproj", "{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{47557447-283D-44E1-96B6-758559A424C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{35C2BB83-C82E-4CA3-88BF-91DC2532C4FD}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{08D55A75-36B4-4B51-9D6C-2E414E4604D4}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\MyExcelExtenTypes\CellData.cs = Scripts\MyExcelExtenTypes\CellData.cs
+		Scripts\TableInfos\ExportSettings.cs = Scripts\TableInfos\ExportSettings.cs
+		Scripts\TableInfos\ProgramSetting.cs = Scripts\TableInfos\ProgramSetting.cs
+		Settings\Settings.xlsx = Settings\Settings.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{D81877C8-6F94-4242-9967-642233A5469B}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\arrow-download.png = Resources\arrow-download.png
+		Resources\ExcelLogo.contrast-black_scale-100.png = Resources\ExcelLogo.contrast-black_scale-100.png
+		Resources\ExcelLogo.contrast-black_scale-140.png = Resources\ExcelLogo.contrast-black_scale-140.png
+		Resources\ExcelLogo.contrast-black_scale-180.png = Resources\ExcelLogo.contrast-black_scale-180.png
+		Resources\ExcelLogo.contrast-black_scale-80.png = Resources\ExcelLogo.contrast-black_scale-80.png
+		Resources\ExcelLogo.contrast-white_scale-100.png = Resources\ExcelLogo.contrast-white_scale-100.png
+		Resources\ExcelLogo.contrast-white_scale-140.png = Resources\ExcelLogo.contrast-white_scale-140.png
+		Resources\ExcelLogo.contrast-white_scale-180.png = Resources\ExcelLogo.contrast-white_scale-180.png
+		Resources\ExcelLogo.contrast-white_scale-80.png = Resources\ExcelLogo.contrast-white_scale-80.png
+		Resources\ExcelLogo.scale-100.png = Resources\ExcelLogo.scale-100.png
+		Resources\ExcelLogo.scale-140.png = Resources\ExcelLogo.scale-140.png
+		Resources\ExcelLogo.scale-180.png = Resources\ExcelLogo.scale-180.png
+		Resources\ExcelLogo.scale-80.png = Resources\ExcelLogo.scale-80.png
+		Resources\ExcelLogoSmall.contrast-black_scale-100.png = Resources\ExcelLogoSmall.contrast-black_scale-100.png
+		Resources\ExcelLogoSmall.contrast-black_scale-140.png = Resources\ExcelLogoSmall.contrast-black_scale-140.png
+		Resources\ExcelLogoSmall.contrast-black_scale-180.png = Resources\ExcelLogoSmall.contrast-black_scale-180.png
+		Resources\ExcelLogoSmall.contrast-black_scale-80.png = Resources\ExcelLogoSmall.contrast-black_scale-80.png
+		Resources\ExcelLogoSmall.contrast-white_scale-100.png = Resources\ExcelLogoSmall.contrast-white_scale-100.png
+		Resources\ExcelLogoSmall.contrast-white_scale-140.png = Resources\ExcelLogoSmall.contrast-white_scale-140.png
+		Resources\ExcelLogoSmall.contrast-white_scale-180.png = Resources\ExcelLogoSmall.contrast-white_scale-180.png
+		Resources\ExcelLogoSmall.contrast-white_scale-80.png = Resources\ExcelLogoSmall.contrast-white_scale-80.png
+		Resources\ExcelLogoSmall.scale-100.png = Resources\ExcelLogoSmall.scale-100.png
+		Resources\ExcelLogoSmall.scale-140.png = Resources\ExcelLogoSmall.scale-140.png
+		Resources\ExcelLogoSmall.scale-180.png = Resources\ExcelLogoSmall.scale-180.png
+		Resources\ExcelLogoSmall.scale-80.png = Resources\ExcelLogoSmall.scale-80.png
+		Resources\Settings.png = Resources\Settings.png
+		Resources\SettingsImage.png = Resources\SettingsImage.png
+		Resources\spreadSheetDownload.png = Resources\spreadSheetDownload.png
+		Resources\text-bullet-list-square.png = Resources\text-bullet-list-square.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiple Export Data", "..\Multiple Export Data\Multiple Export Data.csproj", "{CC3F19C8-959D-4AC8-8789-1D677966B5AF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MultiexporterInstaller", "..\MultiexporterInstaller\MultiexporterInstaller.vdproj", "{4F1163EF-5CC7-4B15-B182-2E30808F386B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportTableData|Any CPU = ExportTableData|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.ExportTableData|Any CPU.ActiveCfg = ExportTableData|Any CPU
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.ExportTableData|Any CPU.Build.0 = ExportTableData|Any CPU
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D99A1B3E-DD78-460B-BBE1-189FCBBCAB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47557447-283D-44E1-96B6-758559A424C8}.Debug|Any CPU.ActiveCfg = Debug
+		{47557447-283D-44E1-96B6-758559A424C8}.Debug|Any CPU.Build.0 = Debug
+		{47557447-283D-44E1-96B6-758559A424C8}.ExportTableData|Any CPU.ActiveCfg = Release
+		{47557447-283D-44E1-96B6-758559A424C8}.ExportTableData|Any CPU.Build.0 = Release
+		{47557447-283D-44E1-96B6-758559A424C8}.Release|Any CPU.ActiveCfg = Release
+		{47557447-283D-44E1-96B6-758559A424C8}.Release|Any CPU.Build.0 = Release
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.ExportTableData|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.ExportTableData|Any CPU.Build.0 = Debug|Any CPU
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3F19C8-959D-4AC8-8789-1D677966B5AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1163EF-5CC7-4B15-B182-2E30808F386B}.Debug|Any CPU.ActiveCfg = Debug
+		{4F1163EF-5CC7-4B15-B182-2E30808F386B}.ExportTableData|Any CPU.ActiveCfg = Debug
+		{4F1163EF-5CC7-4B15-B182-2E30808F386B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08D55A75-36B4-4B51-9D6C-2E414E4604D4} = {35C2BB83-C82E-4CA3-88BF-91DC2532C4FD}
+		{D81877C8-6F94-4242-9967-642233A5469B} = {35C2BB83-C82E-4CA3-88BF-91DC2532C4FD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78AE8729-62EB-45CD-9B61-33E78443F4E4}
+	EndGlobalSection
+EndGlobal

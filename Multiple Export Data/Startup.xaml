@@ -1,0 +1,28 @@
+﻿<Window x:Class="Multiple_Export_Data.Startup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Multiple_Export_Data"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Title="Startup" Height="150" Width="450" Activated="Window_Activated"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Border Background="#FF217346" Grid.Row="0">
+            <Label Content="Multi Table Exporter" Background="Transparent" Foreground="White" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+        </Border>
+        <Border Background="#FF217346" Grid.Row="1">
+            <DockPanel>
+                <TextBlock x:Name="TextBlock_Log" Text="Loading...." Background="Transparent" Foreground="White" DockPanel.Dock="Top" Margin="15,5,15,5"/>
+                <ProgressBar x:Name="PrograssBar_Loading" Background="White" Foreground="#FF846E00" Height="5" Value="0" DockPanel.Dock="Bottom"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

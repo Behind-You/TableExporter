@@ -1,0 +1,84 @@
+﻿<Page x:Class="Multiple_Export_Data.Windows.ProgramSettingsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:local="clr-namespace:Multiple_Export_Data.Windows"
+      Title="ProgramSettingsView" LayoutUpdated="Page_LayoutUpdated"
+      Margin="30,0,20,20">
+
+    <StackPanel>
+
+        <TextBlock x:Name="titleText" Text="Program Settings" FontSize="32" FontWeight="SemiBold" Margin="0,7.5,0,0" HorizontalAlignment="Left" Foreground="#121518" />
+
+        <!-- Seprator -->
+        <Separator Height="1" Background="#dae2ea" Margin="0,0,0,0"/>
+        <ScrollViewer x:Name="sv" Background="Transparent" PreviewMouseWheel="ListViewScrollViewer_PreviewMouseWheel" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel CanVerticallyScroll="True">
+                <StackPanel x:Name="StackPanel_ProgramSettings" Grid.Row="0" Margin="0.5" ScrollViewer.CanContentScroll="True" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!-- Counter Title -->
+                    <TextBlock x:Name="TextBlock_ProgramSettings_Title" Text="Program Settings" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+                    <!-- Seprator -->
+                    <Separator Height="1" Background="#dae2ea" Margin="0,0,0,0"/>
+
+                    <DataGrid  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Margin="0,2" x:Name="DataGrid_ProgramSettings" KeyDown="Grid_ProgramSettings_KeyDown">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="#" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Setting Name" IsReadOnly="True" Width="auto" Binding="{Binding Name}"/>
+                            <DataGridTextColumn Header="Setting Value Type" IsReadOnly="True" Width="auto" Binding="{Binding Type}"/>
+                            <DataGridTextColumn Header="Setting Value" IsReadOnly="True" Width="auto" Binding="{Binding Value}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+                <StackPanel x:Name="StackPanel_ServerTypes" Grid.Row="1" Margin="0,5" CanVerticallyScroll="True" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!-- Counter Title -->
+                    <TextBlock x:Name="TextBlock_ServerTypes_Title" Text="Server Types" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+                    <!-- Seprator -->
+                    <Separator Height="1" Background="#dae2ea" Margin="0,0,0,0"/>
+
+                    <DataGrid  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Margin="0,2" x:Name="DataGrid_ServerTypes" KeyDown="Grid_ServerTypes_KeyDown" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name" IsReadOnly="True" Width="auto" Binding="{Binding NAME}"/>
+                            <DataGridTextColumn Header="Value" IsReadOnly="True" Width="auto" Binding="{Binding Value}"/>
+                            <DataGridTextColumn Header="ID" IsReadOnly="True" Width="auto" Binding="{Binding ID}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+                <StackPanel Grid.Row="2" x:Name="StackPanel_LegionTypes" Margin="0,5" CanVerticallyScroll="True" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!-- Counter Title -->
+                    <TextBlock x:Name="TextBlock_LegionTypes_Title" Text="Legion Types" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+                    <!-- Seprator -->
+                    <Separator Height="1" Background="#dae2ea" Margin="0,0,0,0"/>
+
+
+                    <DataGrid  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Margin="2,0" x:Name="DataGrid_LegionTypes" KeyDown="Grid_LegionTypes_KeyDown" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name" IsReadOnly="True" Width="auto" Binding="{Binding NAME}"/>
+                            <DataGridTextColumn Header="Value" IsReadOnly="True" Width="auto" Binding="{Binding Value}"/>
+                            <DataGridTextColumn Header="ID" IsReadOnly="True" Width="auto" Binding="{Binding ID}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+                <StackPanel Grid.Row="3" x:Name="StackPanel_TotalSheetsTypes" Margin="0,5" CanVerticallyScroll="True" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!-- Counter Title -->
+                    <TextBlock x:Name="TextBlock_TotalSheets_Title" Text="WorkBooks" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+                    <!-- Seprator -->
+                    <Separator Height="1" Background="#dae2ea" Margin="0,0,0,0"/>
+
+
+                    <DataGrid  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Margin="2,0" x:Name="DataGrid_TotalSheets" KeyDown="Grid_TotalSheets_KeyDown" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="WorkBook Name" IsReadOnly="True" Width="auto" Binding="{Binding NAME}"/>
+                            <DataGridTextColumn Header="WorkBook Path" IsReadOnly="True" Width="auto" Binding="{Binding PATH}"/>
+                            <DataGridTextColumn Header="Contains Sheets" IsReadOnly="True" Width="auto" Binding="{Binding SHEETS}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>

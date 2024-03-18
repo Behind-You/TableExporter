@@ -1,0 +1,62 @@
+﻿<Page x:Class="Multiple_Export_Data.Windows.ExportSettingsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:local="clr-namespace:Multiple_Export_Data.Windows"
+      Title="ExportSettingsView">
+    <Grid Margin="30,0,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Export Settings" Grid.Row="0" FontSize="32" FontWeight="SemiBold" Margin="0,0,0,0" HorizontalAlignment="Left" Foreground="#121518" VerticalAlignment="Bottom" />
+        
+        <!-- Seprator -->
+        <Separator Height="1" Grid.Row="2" Background="#dae2ea" Margin="0,0,0,0"/>
+
+        <!-- Counter Title -->
+        <TextBlock x:Name="TextBlock_DataGridTitle" Text="Export Settings" Grid.Row="3" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+        <!-- Seprator -->
+        <Separator Height="1" Grid.Row="4" Background="#dae2ea" Margin="0,0,0,0"/>
+        <Grid Grid.Row="3" Margin="0,0,0,0" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width= "auto"/>
+                <ColumnDefinition Width= "auto"/>
+                <ColumnDefinition Width= "auto"/>
+                <ColumnDefinition Width= "auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="10,0,0,0" >
+                <TextBlock Text="Server Type" FontSize="14" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left"/>
+                <ComboBox x:Name="ComboBox_Filter_Server" Margin="10,0,0,0" Width="100"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="10,0,0,0" >
+                <TextBlock Text="Legion Type" FontSize="14" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left"/>
+                <ComboBox x:Name="ComboBox_Filter_Legion" Margin="10,0,0,0" Width="100"/>
+            </StackPanel>
+            <Button x:Name="Btn_Refresh_Filter" Grid.Column="2" Style="{StaticResource SystemButton}" Padding="0" Click="Btn_Refresh_Filter_Click" >
+                <Icon:PackIconMaterial Kind="TableSearch"/>
+            </Button>
+            <Button x:Name="Btn_Remove_Filter" Grid.Column="3" Style="{StaticResource SystemButton}" Padding="0" Click="Btn_Remove_Filter_Click">
+                <Icon:PackIconMaterial Kind="Refresh"/>
+            </Button>
+        </Grid>
+
+        <DataGrid Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Grid.Row="5" Margin="-2,2,2,0" x:Name="MainDataGrid" KeyDown="Grid_KeyDown" >
+            <DataGrid.Columns>                
+                <DataGridTextColumn Header="#" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding INDEX}"/>
+                <DataGridTextColumn Header="Server Types" IsReadOnly="True" Width="auto" Binding="{Binding SERVER_TYPE}"/>
+                <DataGridTextColumn Header="Legion Types" IsReadOnly="True" Width="auto" Binding="{Binding LEGION_TYPE}"/>
+                <DataGridTextColumn Header="Name" IsReadOnly="True" Width="auto" Binding="{Binding NAME}"/>
+                <DataGridTextColumn Header="Path" IsReadOnly="True" Width="auto" Binding="{Binding PATH}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

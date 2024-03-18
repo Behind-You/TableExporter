@@ -1,0 +1,30 @@
+﻿<Page x:Class="Multiple_Export_Data.Windows.TotalSheetView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:local="clr-namespace:Multiple_Export_Data.Windows"
+      xmlns:uc="clr-namespace:Multiple_Export_Data.Windows"
+      Title="TotalSheetView" LayoutUpdated="Page_LayoutUpdated"
+      >
+
+    <Grid x:Name="mainGrid" Grid.Column="2" Margin="30,0,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TextBlock_TotalSheet_View_MainTitle" Text="통합 문서" Grid.Row="0" FontSize="32" FontWeight="SemiBold" Margin="0,0,0,0" HorizontalAlignment="Left" Foreground="#121518" VerticalAlignment="Bottom" />
+
+        <!-- Seprator -->
+        <Separator Height="1" Grid.Row="1" Background="#dae2ea" Margin="0,0,0,0"/>
+
+        <ScrollViewer x:Name="sv" Grid.Row="2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto" Padding="0,20" Width="{Binding ElementName=TotalSheet_View,Path=ActualWidth}" HorizontalAlignment="Left">
+            <StackPanel x:Name="StackPanel_TotalSheets" Orientation="Vertical" VerticalAlignment="Top">
+                <uc:TotalSheetUserControl_Vertical x:Name="TotalSheetUserControl"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</Page>
